@@ -21,7 +21,18 @@ public class Esercizi_Stream {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-		Scanner in = new Scanner(System.in);
+testScanner();
+
+testBufferedReader();
+
+
+                
+                
+                
+                
+	}
+    public static void testScanner(){
+        		Scanner in = new Scanner(System.in);
 		System.out.println("Digita un intero:");
 		
 		String line = in.next();
@@ -29,18 +40,16 @@ public class Esercizi_Stream {
 	    
 		System.out.println("Valore: " + intValue);
 		in.close();
-
-                in.close();
-                BufferedReader inR = new BufferedReader (new InputStreamReader (System.in));
+    }
+    
+    public static void testBufferedReader() {
+        BufferedReader inR = new BufferedReader (new InputStreamReader (System.in));
         try {
             int lineR = inR.read();
         } catch (IOException ex) {
             Logger.getLogger(Esercizi_Stream.class.getName()).log(Level.SEVERE, null, ex);
         }
-                
-                
-                
-	}
+    }
     
     }
     
